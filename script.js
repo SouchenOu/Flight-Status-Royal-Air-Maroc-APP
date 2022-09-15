@@ -14,7 +14,7 @@ let flights = [
 
     {
         time: "13:20",
-        destination: "Landed-ON TIME[+]",
+        destination: "Morroco",
         flight: "EY4219",
         gate: "A 02",
         remarks: "Landed-ON TIME[+]"

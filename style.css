@@ -58,16 +58,53 @@ h1 {
 }
 
 .dipart table {
-    background-color: azure;
+    background-color: black;
     text-align: left;
 }
 
 .dipart table div {
-    border: solid 4px rgb(26, 26, 26);
+    border: solid 4px rgb(39, 39, 39);
     background-color: rgb(0, 0, 0);
     float: left;
+    height: 40px;
 }
 
 .dipart table td {
     color: white;
+}
+
+#time {
+    width: 100px;
+}
+
+#destination {
+    width: 260px;
+}
+
+#flight {
+    width: 205px;
+}
+
+#gate {
+    width: 135px;
+}
+
+#remarks {
+    width: 300px;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotateX(90deg)
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
