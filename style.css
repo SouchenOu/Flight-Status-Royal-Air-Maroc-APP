@@ -1,6 +1,14 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--black);
 }
 
 body {
@@ -14,6 +22,24 @@ body {
 h1 {
     padding: 10px;
     color: sienna;
+}
+
+.header {
+    padding: 80px;
+}
+
+.header1 {
+    border-bottom: .2rem solid rgba(0, 0, 0, .1);
+}
+
+.header1 a {
+    font-size: 20px;
+}
+
+.header .nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--black);
 }
 
 .dipart {

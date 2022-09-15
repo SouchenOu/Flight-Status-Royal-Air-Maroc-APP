@@ -1,6 +1,6 @@
 let table = document.getElementById('body_table')
 
-let flight = [
+let flights = [
 
 
     {
@@ -54,3 +54,12 @@ let flight = [
     },
 
 ]
+
+function tables() {
+
+
+    for (const flight of flights) {
+        const row = document.createElement("tr");
+
+    }
+}
