@@ -64,10 +64,18 @@ function tables() {
 
         for (flightDetail in flight) {
             const tableCell = document.createElement("td")
-            console.log(flightDetail)
-            tableCell.innerHTML = flight[flightDetail]
+                //tableCell.innerHTML = flight[flightDetail]
+            const word = Array.from(flight[flightDetail])
+
+            for (const letter of word) {
+                const letterElement = document.createElement('div')
+                letterElement.classList.add('flip')
+                letterElement.textContent = letter
+                tableCell.append(letterElement)
+            }
             tableRow.append(tableCell)
         }
+
 
         table_body.append(tableRow);
     }
