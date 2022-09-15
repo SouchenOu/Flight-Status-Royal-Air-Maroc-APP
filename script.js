@@ -1,4 +1,4 @@
-let table = document.getElementById('body_table')
+let table_body = document.getElementById('body-table')
 
 let flights = [
 
@@ -51,7 +51,7 @@ let flights = [
         gate: "A 10",
         remarks: "Landed-ON TIME[+]"
 
-    },
+    }
 
 ]
 
@@ -59,7 +59,21 @@ function tables() {
 
 
     for (const flight of flights) {
-        const row = document.createElement("tr");
+        //with creatElement we spicified the type of element to be created
+        const tableRow = document.createElement("tr");
 
+        for (flightDetail in flight) {
+            const tableCell = document.createElement("td")
+            console.log(flightDetail)
+            tableCell.innerHTML = flight[flightDetail]
+            tableRow.append(tableCell)
+        }
+
+        table_body.append(tableRow);
     }
+
+
+
 }
+
+tables()
